@@ -14,7 +14,7 @@ Este proyecto implementa un sistema en ESP32 que permite:
 
 ---
 
-## 🛠️ Tecnologías Utilizadas
+## Tecnologías Utilizadas
 
 - **ESP32**
 - **Arduino Framework**
@@ -29,11 +29,12 @@ Este proyecto implementa un sistema en ESP32 que permite:
 
 ```
 ├── src/
-│   └── main.cpp
+│   └── main.ino
 ├── README.md
 ├── wiki/
-│   ├── diseño_tecnico.md
-│   ├── diagramas/
+│   ├── interfaces.md
+│   ├── imagenes/
+│   │   ├── ...Imagenes pagina web
 │   │   ├── uml_secuencia.png
 │   │   └── arquitectura.png
 ├── postman/
@@ -44,7 +45,7 @@ Este proyecto implementa un sistema en ESP32 que permite:
 
 ---
 
-## 🌐 Endpoints Implementados
+## Endpoints Implementados
 
 | Método | URL              | Headers       | Query Params | Payload (JSON)             | Respuesta |
 |--------|------------------|---------------|--------------|----------------------------|-----------|
@@ -55,26 +56,27 @@ Este proyecto implementa un sistema en ESP32 que permite:
 
 ---
 
-## 🔁 Lógica de Conexión Wi-Fi
+## Lógica de Conexión Wi-Fi
 
 - Si hay credenciales guardadas:
   - Intenta conectar a la red.
   - Si falla, borra credenciales y reinicia en modo AP.
 - Si no hay credenciales:
   - Inicia en modo AP con SSID `ConfiguraESP32`.
+  - Clave por defecto `12345678`
   - Ofrece formulario web para ingresar datos.
   - El Access Point esta en `192.168.4.1`
 
 ---
 
-## 🔧 Mecanismo de Reinicio
+## Mecanismo de Reinicio
 
 - Si la conexión falla, se borran las credenciales y se reinicia en modo AP.
 - También se puede cambiar la red desde el endpoint `/change_wifi`.
 
 ---
 
-## 📊 Diagramas
+## Diagramas
 
 - **UML de Secuencia**: Flujo de conexión y configuración.
 - **Arquitectura del Sistema**: Componentes y comunicación.
@@ -84,20 +86,24 @@ Este proyecto implementa un sistema en ESP32 que permite:
 
 ---
 
-## 🧪 Pruebas con Postman
+## Pruebas con Postman
 
 - Colección disponible en `postman/coleccion.postman_collection.json`.
 - Incluye pruebas para todos los endpoints.
 
 ---
 
-## 📚 Documentación Técnica
+## Documentación Técnica
 
 - Ver `wiki/diseño_tecnico.md` para detalles de implementación.
 - Incluye esquemáticos, diagramas y explicación del código.
+
+- [Ver la Descripción de las Vistas, incluyendo una explicación detallada de cada una de las páginas web del sistema.](wiki/interfaces)
+- 🌐 Incluye la visualización y comportamiento de cada uno de los endpoints disponibles en el dispositivo.
+
 
 ---
 
 ## 💬 Conversaciones con IA
 
-- Archivo `conversaciones/chat_con_IA.md` contiene el historial de asistencia con inteligencia artificial.
+- Archivo [Conversaciones con IA](conversaciones/chat_con_IA.md) contiene el historial de asistencia con inteligencia artificial.
