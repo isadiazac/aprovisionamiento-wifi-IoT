@@ -88,7 +88,7 @@ Este proyecto implementa un sistema en ESP32 que permite:
 
 ## Pruebas con Postman
 
-- Colección disponible en `postman/coleccion.postman_collection.json`. y en [Colección Postman](https://isadiac06-8447466.postman.co/workspace/Isabela-D%C3%ADaz-Acosta's-Workspace~9e2b66f0-0753-4365-8205-f3c81aec62b1/collection/48860550-9d965c59-ab2c-4bd3-a27d-2fb88f51e910?action=share&creator=48860550)
+- Colección disponible en `postman/coleccion.postman_collection.json` y en [Colección Postman](https://isadiac06-8447466.postman.co/workspace/Isabela-D%C3%ADaz-Acosta's-Workspace~9e2b66f0-0753-4365-8205-f3c81aec62b1/collection/48860550-9d965c59-ab2c-4bd3-a27d-2fb88f51e910?action=share&creator=48860550).
 - Incluye pruebas para todos los endpoints.
 
 ---
