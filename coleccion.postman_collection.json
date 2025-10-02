@@ -1,0 +1,80 @@
+{
+  "info": {
+    "name": "ESP32 Endpoints",
+    "_postman_id": "7f4c7d7a-esp32-collection",
+    "description": "Colección de pruebas para los endpoints del ESP32",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Página de bienvenida",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://192.168.4.1/",
+          "protocol": "http",
+          "host": ["192", "168", "4", "1"],
+          "path": [""]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Guardar WiFi inicial (/save)",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            { "key": "ssid", "value": "MiWiFi", "type": "text" },
+            { "key": "password", "value": "superclave", "type": "text" }
+          ]
+        },
+        "url": {
+          "raw": "http://192.168.4.1/save",
+          "protocol": "http",
+          "host": ["192", "168", "4", "1"],
+          "path": ["save"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Cambiar WiFi (/change_wifi)",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            { "key": "ssid", "value": "NuevoWiFi", "type": "text" },
+            { "key": "password", "value": "nuevaclave", "type": "text" }
+          ]
+        },
+        "url": {
+          "raw": "http://192.168.4.1/change_wifi",
+          "protocol": "http",
+          "host": ["192", "168", "4", "1"],
+          "path": ["change_wifi"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Obtener chiste (/chiste)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://192.168.4.1/chiste",
+          "protocol": "http",
+          "host": ["192", "168", "4", "1"],
+          "path": ["chiste"]
+        }
+      },
+      "response": []
+    }
+  ]
+}
