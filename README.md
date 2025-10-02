@@ -81,7 +81,8 @@ Este proyecto implementa un sistema en ESP32 que permite:
 - **UML de Secuencia**: Flujo de conexión y configuración.
 - **Arquitectura del Sistema**: Componentes y comunicación.
 
-<img width="242" height="752" alt="image" src="https://github.com/user-attachments/assets/77f255c5-1040-41b7-bbb5-0469cfa1e1b7" />
+<img width="235" height="675" alt="image" src="https://github.com/user-attachments/assets/84930444-4e75-4db4-bd86-7a12e9492ec1" />
+
 
 ---
 
