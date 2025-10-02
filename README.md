@@ -98,7 +98,7 @@ Este proyecto implementa un sistema en ESP32 que permite:
 - Ver `wiki/diseño_tecnico.md` para detalles de implementación.
 - Incluye esquemáticos, diagramas y explicación del código.
 
-- [Ver la Descripción de las Vistas, incluyendo una explicación detallada de cada una de las páginas web del sistema.](wiki/interfaces)
+- [Ver la Descripción de las Vistas, incluyendo una explicación detallada de cada una de las páginas web del sistema.](wiki/interfaces.md)
 - 🌐 Incluye la visualización y comportamiento de cada uno de los endpoints disponibles en el dispositivo.
 
 
